@@ -32,6 +32,7 @@ const ExpenseForm = (props) => {
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
+        props.onHideForm();
     };
 
     return <form onSubmit={submitHandler}>
